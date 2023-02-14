@@ -1,0 +1,3448 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
+    -webkit-border-radius: 0;
+}
+
+body {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+
+a,
+input+label {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input {
+    font-size: 16px !important;
+}
+
+input[id="file_vnm"],
+input[id="m_myloc"] {
+    font-size: 100% !important;
+}
+
+/*.join input[type="text"],.login input[type="text"]{    font-size: 16px !important;
+    border-radius: 6.666666667px !important;
+    line-height: 26.666666667px !important;
+    padding: 6.666666667px;
+    width: 133.0% !important;
+    transform: scale(0.75);
+    transform-origin: left top;
+    margin-bottom: -17px;
+    margin-right: -23.333333%;
+    height: 67px !important;}*/
+select {
+    /*padding: .8em .5em;*/
+    height: 42px;
+    font-family: inherit;
+    background: url(/resources/assets/images/icon/chevron-down.svg) no-repeat 95% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding-left: 18px;
+    padding-right: 30px;
+    min-width: 135px;
+}
+
+.login__input .line input:placeholder-shown {
+    border-color: #000000;
+}
+
+.l-layout {
+    min-height: calc(100vh - 54rem);
+}
+
+#wrap {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+
+.main-vi-wrap a:hover,
+.main-vi-wrap:hover,
+.banner-slide:hover,
+.menu__popular-slide .l-menu-item .img:hover {
+    cursor: url('/resources/assets/images/icon/arrow_cusor_1.cur'), pointer;
+}
+
+select::-ms-expand {
+    /* for IE 11 */
+    display: none;
+}
+
+#footer a {
+    color: #fff;
+}
+
+.s_text_G {
+    color: #999;
+}
+
+.text_center {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.search-area .e_coupon-search {
+    font-weight: 800;
+    width: 100% !important;
+    margin: auto;
+    border-bottom: 2px solid #21293B;
+    padding: 4% 30px 4% 0;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.search-area .e_coupon-search::placeholder {
+    color: #999;
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+
+.nice-select .list {
+    max-height: 300px;
+}
+
+.e_coupon_div {
+    margin: 4% auto 1%;
+    width: 60%;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translateX(0);
+}
+
+.e_coupon_div_btn {
+    width: 60%;
+    margin: 0 auto 3%;
+    text-align: right;
+}
+
+.e_coupon_div_btn .black_btn {
+    background: #0c0c0c;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid #000;
+    font-size: 1.3rem;
+}
+
+.sys-pro {
+    border-radius: 10px;
+    background-color: #F5ECE4;
+}
+
+.e_coupon_div .e_coupon_s_btn {
+    width: 30px;
+    height: 30px;
+    background: url(../images/icon/icon_search.svg) center no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+}
+
+.e_coupon__page-tab-tit {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000;
+    padding-bottom: 2.2rem;
+}
+
+.div_box_border_top {
+    padding: 4.2rem 0;
+    border-top: 1px solid #212121;
+    margin-top: 7%;
+}
+
+.div_box_border_bottom {
+    border-bottom: 1px solid #212121;
+    margin-top: 0;
+}
+
+.div_box_border_top .inside_ul li {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    clear: both;
+    margin-bottom: 1rem;
+    height: auto;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.icon_nu {
+    font-size: 3rem;
+    float: left;
+    line-height: 0;
+}
+
+.cscenter_inside .icon_nu {
+    font-size: 1rem;
+    line-height: normal;
+    width: auto;
+}
+
+.cscenter_inside .text_span {
+    width: 96%;
+    margin-left: 0.5%;
+}
+
+.cscenter_inside {
+    width: 50%;
+    margin: 2% auto 0;
+}
+
+.text_span {
+    margin-left: 15px;
+    float: left;
+}
+
+.coupon_h3 {
+    font-weight: 800;
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serifsans-serif;
+    border: 1px solid #212121;
+    border-radius: 25px;
+    width: 182px;
+    text-align: center;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    margin: auto;
+}
+
+.coupon_text_div {
+    font-weight: 600;
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serifsans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 2% auto;
+}
+
+.coupon_list {
+    text-align: center;
+}
+
+.coupon_list li {
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    margin: 1rem;
+    vertical-align: middle;
+}
+
+.coupon_list li .coupon_list_bg {
+    background: url(../images/icon/icon_coupon_bg.svg) center no-repeat;
+    width: 300px;
+    height: 181px;
+    display: inline-block;
+    position: relative;
+}
+
+.coupon_ch {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.coupon_ch input[type="checkbox"]+label {
+    cursor: pointer;
+}
+
+.coupon_number {
+    margin: 4%;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.coupon_title {
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serifsans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.coupon_dl {
+    line-height: 1.5;
+}
+
+.coupon_dl dt {
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serifsans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #D4000B;
+}
+
+.coupon_dl dd {
+    font-size: 1.6rem;
+    padding: 0 25px;
+    font-weight: 500;
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serifsans-serif;
+    overflow: hidden;
+    line-height: 1.4;
+    margin-top: 0.7rem;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.coupon_dl dd:last-child {
+    font-size: 1rem;
+    margin-top: 0;
+    font-weight: 500;
+    position: absolute;
+    bottom: 1.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.coupon_pro .black_btn {
+    background: #0c0c0c;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid #000;
+    font-size: 1.3rem;
+    margin: 1rem auto 2rem;
+    cursor: pointer;
+    width: 270px;
+    text-align: center;
+}
+
+/*마이페이지*/
+.box_bg_b {
+    background: #FBF5F0;
+}
+
+.list_inline_block {
+    text-align: center;
+    margin-top: 2rem;
+    clear: both;
+}
+
+.list_inline_block li {
+    display: inline-block;
+    width: calc(100% /5.1);
+    margin: 0 0.5rem;
+    padding: 2.5rem;
+    text-align: left;
+    border-radius: 10px;
+    min-height: 172px;
+    vertical-align: middle;
+}
+
+.list_inline_block li dl {
+    font-size: 1.6rem;
+}
+
+.list_inline_block li dt {
+    height: 42px;
+    line-height: 42px;
+}
+
+.list_inline_block li dd {
+    margin: 2rem 0;
+}
+
+.text_name {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.my_icon_svg {
+    width: auto;
+    margin-right: 1rem;
+}
+
+.text_color_G {
+    font-weight: 800;
+    color: #999;
+}
+
+.text_color_B {
+    font-weight: 800;
+    color: #000;
+    margin: 0 0.5rem;
+}
+
+.text_color_R {
+    font-weight: 600;
+    color: #d60018;
+    font-size: 2rem;
+}
+
+.btn_B {
+    font-weight: 800;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0.7rem;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn_B:hover {
+    background: #000;
+    color: #fff;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.text_size_m {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.date_div {
+    position: relative;
+}
+
+.date_pop {
+    position: absolute;
+    right: 1rem;
+    top: 32px;
+    background: #fff;
+    padding: 3rem;
+    width: 130px;
+}
+
+.date_btn {
+    cursor: pointer;
+    margin-right: 1rem;
+    width: 118px;
+    float: right;
+    margin-bottom: 1rem;
+}
+
+.date_btn:hover .date_hover,
+.date_btn:active .date_hover,
+.date_btn:not(:disabled):active:focus .date_hover,
+.date_btn:focus .date_hover {
+    background: #000;
+    fill: #fff;
+    border-radius: 5px;
+}
+
+.date_btn .nice-select {
+    min-width: 100%;
+}
+
+.float_left {
+    float: left;
+    margin: 0;
+}
+
+.text_right {
+    text: right;
+}
+
+.float_right {
+    float: right;
+    margin: 0;
+}
+
+.btn_inline_block li {
+    display: inline-block;
+}
+
+.btn_inline_block li .btn_B {
+    width: auto;
+    padding: 0.85rem 4rem;
+}
+
+.my_pag_width {
+    margin: 1rem 1rem 0;
+    height: auto;
+    overflow: hidden;
+}
+
+.tab_list {
+    padding: 3rem 0;
+    margin: 2rem 0;
+    border: 2px solid #000;
+    border-left: 0;
+    border-right: 0;
+}
+
+.tab_list li {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.list_info_line li {
+    display: inline-block;
+    width: 49%;
+}
+
+.list_info_order li {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.list_info_order li b {
+    font-weight: 800;
+}
+
+.list_info_order li .btn_B {
+    padding: 1.5rem;
+}
+
+.list_info_order {
+    border-right: 1px solid #000;
+}
+
+.order_list_div {
+    position: relative;
+    text-align: center;
+}
+
+.order_list_icon li {
+    width: calc(100%/4.2);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.order_list_icon {
+    position: relative;
+    z-index: 1;
+}
+
+.order_list_icon li div img {
+    height: 65px;
+    margin-bottom: 1rem;
+}
+
+.line_center {
+    position: absolute;
+    width: 73%;
+    border-top: 1px solid #000;
+    top: 39%;
+    left: 64px;
+}
+
+.on_text {
+    font-weight: 800;
+}
+
+.border_bottom {
+    border-bottom: 1px solid #000;
+    padding-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.member_table {
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.member_table .list_info_line li {
+    width: auto;
+}
+
+.member_table .nice-select {
+    float: none;
+}
+
+input.input_style {
+    border: 1px solid #000;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+.icon_box {
+    margin-right: 0;
+    background: #fff;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.chat_event .icon_box {
+    padding: 0.3rem;
+}
+
+.text_icon_right {
+    margin-left: 1rem;
+}
+
+.textarea_style {
+    border: 1px solid #000;
+    width: 84%;
+    height: 55px;
+    overflow: auto;
+    padding: 11px;
+    float: left;
+    border-radius: 5px;
+}
+
+.chat_box {
+    margin-right: 1rem;
+}
+
+.chat_header {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1rem 0;
+}
+
+.chat_form_control {
+    padding: 2% 2% 1%;
+    border-bottom: 1px solid #000;
+}
+
+.chat_btn {
+    float: right;
+    width: 13%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.notice .notice-list-btn {
+    clear: both;
+}
+
+.chat_form_list_ul_box dl {
+    font-size: 1.2rem;
+}
+
+.chat_form_list_ul_box dl dt {
+    font-weight: 800;
+    float: left;
+    width: 50%;
+}
+
+.btn_box_dd {
+    width: 50%;
+    float: right;
+}
+
+.text_box_view {
+    clear: both;
+    height: auto;
+    overflow: hidden;
+}
+
+.btn_box_dd .list_info_line {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.btn_box_dd .list_info_line li {
+    width: auto;
+    border-bottom: 0;
+    background: #000;
+    color: #fff;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.chat_form_list_ul_box li {
+    padding: 1% 2% 2%;
+    border-bottom: 1px solid #d3c6bb;
+}
+
+.btn_box_dd .list_info_line li.delete_btn {
+    background: #847c76;
+}
+
+.btn_box_dd .list_info_line li.correction_btn,
+.btn_box_dd .list_info_line li.correction_delete {
+    background: #4f2808;
+}
+
+.chat_form_list_ul_box dl.chat_chat_dl {
+    margin-top: 3rem;
+    padding: 1%;
+    border-top: 1px dotted #999;
+}
+
+.chat_form_list_ul_box dl.chat_chat_dl .text_box_view {
+    padding-left: 16px;
+}
+
+.date_text {
+    font-weight: 500;
+    color: #3a3a3a;
+}
+
+.cscenter_table {
+    width: 64%;
+    margin: 3% auto 0;
+}
+
+.cscenter_table .nice-select {
+    min-width: 240px;
+}
+
+.cscenter_table .textarea_style {
+    width: 89%;
+    height: 260px;
+    min-width: 600px;
+}
+
+.cscenter_table .input_cs {
+    width: 91%;
+    min-width: 612px;
+}
+
+.cscenter_table .input_css {
+    width: 80%;
+    min-width: 229px;
+}
+
+.list_info_line_btn {
+    text-align: center;
+}
+
+.list_info_line_btn button {
+    display: inline-block;
+}
+
+.list_info_line_btn li {
+    width: auto !important;
+}
+
+.icon_name {
+    border: 1px solid #000;
+    padding: 0.5rem 1rem;
+    border-radius: 9px;
+    background: #000;
+    color: #fff;
+}
+
+.payment .join__input .input-area .sec-line .right .text_color_G {
+    display: inline-block !important;
+}
+
+.menu-detail__desc-area .select-btn button:first-child:nth-last-child(1) {
+    width: auto;
+    padding: 0 2rem;
+}
+
+.payment .msg-select-box .textarea-area textarea:placeholder-shown,
+.join__input .input-area .l-input:placeholder-shown,
+.payment .msg-select-box .textarea-area textarea {
+    border-color: #212121;
+    font-size: 1.5rem;
+}
+
+/*파일업로드*/
+.where {
+    display: block;
+    margin: 25px 15px;
+    font-size: 11px;
+    color: #000;
+    text-decoration: none;
+    font-family: verdana;
+    font-style: italic;
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.filebox label {
+    display: inline-block;
+    padding: .5em .75em;
+    color: #999;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+    margin-bottom: 0;
+}
+
+/* named upload */
+.filebox .upload-name {
+    display: inline-block;
+    padding: .5em .75em;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #e3d7cd;
+    border: 1px solid #ccbdb0;
+    border-bottom-color: #ccbdb0;
+    border-radius: .25em;
+    -webkit-appearance: none;
+    /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* imaged preview */
+.filebox .upload-display {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 0;
+    min-width: auto;
+    max-width: 250px;
+    max-height: 250px;
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.upload-display_block {
+    min-width: 250px;
+    min-height: 250px;
+}
+
+.member_table .filebox .upload-display {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.notice__detail .member_table td {
+    padding: 1rem;
+}
+
+.notice__detail .member_table .nice-select {
+    float: left;
+}
+
+.padding_10 {
+    padding: 4%;
+}
+
+.padding_bottom_1 {
+    padding-bottom: 1rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.store__map {
+    min-height: 58.5rem;
+}
+
+.store__search-tab .tab-desc .search-list-area .result-list {
+    max-height: 30rem;
+}
+
+.l-cart {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../images/icon/I_Quick_0_1.svg) center no-repeat;
+    background-size: contain;
+}
+
+.franchise_map {
+    min-height: 350px;
+    background: #fff;
+}
+
+.map_box {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+/*찾아오시는길*/
+.map_ul {
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    margin: auto;
+}
+
+.map_ul li {
+    height: auto;
+    overflow: hidden;
+    line-height: 1.5;
+    margin: 3rem 0;
+}
+
+.map_icon i {
+    margin-right: 1rem;
+}
+
+.map_icon {
+    float: left;
+    clear: both;
+}
+
+.subway_05 {
+    background: #8f3de4;
+    color: #fff;
+    padding: 0 0.4rem;
+    border-radius: 50%;
+}
+
+.bus_back {
+    background: #4a972e;
+    color: #fff;
+    padding: 0 0.4rem;
+}
+
+.bus_back_1 {
+    background: #3556a7;
+    color: #fff;
+    padding: 0 0.4rem;
+}
+
+.bus_back_2 {
+    background: #4a972e;
+    color: #fff;
+    padding: 0 0.4rem;
+}
+
+.map_ul .text_span {
+    margin-left: 0;
+}
+
+.map_ul li br {
+    display: none;
+}
+
+.map_ul .text_span.left_rem {
+    margin-left: 0.5rem;
+}
+
+.weight_80 {
+    font-weight: 800;
+}
+
+.journal_box {
+    margin: 1rem auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.journal_box .l-title {
+    margin-bottom: 4rem;
+}
+
+.contants_journal {
+    clear: both;
+    margin: 4rem auto;
+    white-space: pre-line;
+    text-align: center;
+    padding: 0 10rem;
+}
+
+.quote_icon_img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: -18px;
+}
+
+.rotate {
+    transform: rotate(182deg);
+}
+
+.journal_box .text_size_m {
+    line-height: 1.8;
+    font-size: 1.7rem;
+}
+
+.back_icon_G {
+    margin: 0;
+    background: #d4000b;
+    text-align: center;
+    color: #fff;
+}
+
+.journal_box .back_icon_G {
+    width: 130px;
+}
+
+.journal_box .text_size_L {
+    font-size: 2.3rem;
+}
+
+.contants_img {
+    white-space: normal;
+}
+
+.contants_img_left,
+.contants_img_right {
+    display: inline-block;
+    width: 49%;
+}
+
+.journal #footer {
+    margin-top: 0;
+}
+
+.title_box_div {
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #d4000b;
+    padding: 1rem;
+}
+
+.journal_box .text_size_L br {
+    display: none;
+}
+
+.inline_li {
+    display: flex;
+    width: 100%;
+}
+
+.email_inline {
+    justify-content: space-around;
+    display: inline-block;
+}
+
+.email_inline li:nth-child(2) {
+    width: auto;
+    /* display: none; */
+}
+
+.email_inline li:nth-child(3),
+.email_inline li:nth-child(4) {
+    width: 46%;
+    margin: 1rem 0;
+}
+
+.email_inline li:nth-child(4) {
+    margin-left: 1%;
+    width: 47%;
+    float: right;
+}
+
+.inline_li li {
+    vertical-align: middle;
+    margin: 0 0.3rem;
+    width: calc(100% / 3);
+}
+
+.email_inline li:first-child {
+    margin-left: 0;
+}
+
+.email_inline li:last-child {
+    margin-right: 0;
+}
+
+.inline_li .selectpicker {
+    min-width: 100%;
+}
+
+.inline_li li .list li {
+    width: auto;
+    margin: 0;
+}
+
+.email_inline li {
+    width: auto;
+    line-height: 42px;
+    display: inline-block;
+}
+
+.email_inline li .list li:nth-child(2) {
+    display: block;
+}
+
+.email_inline li .list li,
+.email_inline li .list li:nth-child(3),
+.email_inline li .list li:nth-child(4) {
+    width: auto;
+    margin: 0;
+    float: none;
+}
+
+.menu_detail_desc .desc dd {
+    margin-bottom: 2.5rem;
+}
+
+.menu-detail__desc-area .menu_detail_desc .price .l-num {
+    font-weight: 700;
+}
+
+.menu_detail_desc .desc .or-price {
+    margin-left: 6px;
+}
+
+.sale_img {
+    position: relative;
+}
+
+.sale_icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+}
+
+.sale_icon li {
+    display: inline-block;
+}
+
+.countdown_alarm {
+    position: absolute;
+    top: 0;
+    left: 17px;
+}
+
+.countdown_alarm li {
+    display: inline-block;
+    font-size: 2.2rem;
+    color: #e8012f;
+    font-weight: 800;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+
+.countdown_alarm li img {
+    position: absolute;
+    transform: rotate(-16deg);
+    bottom: -5px;
+    left: 20px;
+    animation: circlemove 0.7s infinite linear;
+    width: 20px;
+}
+
+.countdown_alarm li.time_icon_text {
+    border: 1px solid #db012d;
+    border-radius: 15px;
+    padding: 0.8rem 1.3rem 0.8rem 2.2rem;
+    font-size: 1.2rem;
+    margin-left: 12px;
+    background: #e8012f;
+    color: #fff;
+    position: relative;
+}
+
+.countdown_alarm li.time_icon_text span {
+    margin-left: 14px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+
+.store_box .store_btn_map li img {
+    width: 23px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.store__search-tab .tab-desc .search-list-area .store_box .list .desc {
+    margin-right: 1.2rem;
+    width: 100%;
+}
+
+
+@media(min-width: 768px) {
+    .member_table .filebox .upload-display {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .filebox .upload-display {
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 0;
+        min-width: auto;
+        max-width: 250px;
+    }
+}
+
+.filebox .upload-thumb-wrap {
+    display: inline-block;
+    width: 54px;
+    padding: 2px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.filebox .upload-display img {
+    display: block;
+    max-width: 100%;
+    width: 100% \9;
+    height: auto;
+}
+
+.filebox.bs3-primary label {
+    color: #fff;
+    background-color: #d4000b;
+    border-color: #a10012;
+}
+
+.view {
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+}
+
+.view img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*메인롤링배너*/
+.main-box {
+    height: 100%;
+    padding: 0;
+    margin-top: -4px;
+}
+
+.main-box .main-txt-area {
+    margin-top: 11rem;
+}
+
+.main-box .goobne-img.goobne-img_office {
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1rem;
+}
+
+.main-vi-wrap .slick-slide img.main_banner_MO {
+    display: none;
+}
+
+.goobne-bg02 {
+    width: 100% !important;
+}
+
+#header {
+    background-color: transparent;
+    font-weight: normal;
+    font-weight: 400 !important;
+    color: #e38211;
+}
+
+#header.drop {
+    background-color: #FBF5F0;
+    animation: dropHeader 0.4s;
+}
+
+#header .menu ul li a {
+    font-weight: 800 !important;
+    /*background: rgb(251,245,240,0.5);
+    border-radius: 15px;
+    padding: 5px 10px;*/
+}
+
+@keyframes dropHeader {
+    0% {
+        top: -5rem;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+/*.main-box .goobne-img_office_bg_01{background: url("https://www.goobne.co.kr/resources/images/main/220527_micro_ovbss/bg_pc.jpg");}
+.main-box .goobne-img_office_bg_02{background: url("../../assets/images/main/Pop_up_Store/bg_pc1920X940.jpg");}*/
+
+/*고객소리 1:1 게시판*/
+.cscenter_regi_list_table {
+    margin-top: 4rem;
+}
+
+.answer_list {
+    background: #fcefe4;
+}
+
+.answer_list ul {
+    margin-bottom: 0;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.cscenter_regi_detail .notice__detail-desc {
+    white-space: pre-line;
+    padding: 3rem 3rem 7rem;
+}
+
+.cscenter_regi_detail_img {
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.icon_round {
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.1rem 0.4rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.cscenter_regi_detail_answer {
+    padding: 3rem;
+    font-size: 1.5rem;
+    background: #f1e8e0;
+    line-height: 1.4;
+}
+
+.cscenter_regi_text {
+    padding: 0rem 2rem 1rem;
+    white-space: pre-line;
+}
+
+/*이벤트*/
+.chat_event {
+    text-align: right;
+    vertical-align: middle;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.number_chat {
+    vertical-align: middle;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.event__list .list .desc {
+    bottom: 0;
+    min-height: 30.1% !important;
+    height: 30.1%;
+}
+
+.event__list .list .desc .sub,
+.event__list .list .desc .main {
+    margin-bottom: 4%;
+}
+
+.event__list .list .desc .main {
+    font-size: 180%;
+}
+
+.event__list .list figure img {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.end_mask {
+    position: absolute;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+.end_text {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+.call_btn {
+    margin-top: 1rem;
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.call_btn .l-btn {
+    width: 97%;
+    max-width: 36.6rem;
+}
+
+/*게시판 파일 리스트*/
+.file_list_line {
+    margin: auto;
+    padding: 2rem 2.5rem;
+    background: #f6e8dc;
+}
+
+.file_list_line li:first-child {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.file_list_line li {
+    margin: 1rem 0 0;
+}
+
+.file_list_line li a {
+    font-size: 1.2rem;
+    color: #4e4e4e;
+}
+
+.file_list_line li a:hover {
+    color: #0077f7;
+}
+
+.data_null {
+    margin: auto;
+    min-height: 200px;
+    font-size: 1.5rem;
+    color: #783700;
+    line-height: 100px;
+}
+
+/*메인*/
+.no-js {
+    visibility: hidden;
+    animation: hide 0.1s linear forwards;
+}
+
+.visible {
+    visibility: visible;
+    animation: show 0.1s linear forwards;
+}
+
+/*창업문의*/
+.founded_online_main {
+    position: relative;
+}
+
+.quickmenu {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    margin-top: -309px;
+    right: 0%;
+    background: #000;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.quickmenu ul {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.quickmenu ul li {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.quickmenu ul li:last-child {
+    border-bottom: 0;
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+
+.inline_block li p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.email_inline li:nth-child(1) {
+    width: 100%;
+}
+
+.birthday_select .nice-select {
+    margin: 0 0.5rem;
+    width: 100%;
+}
+
+.join .agree-cnt-wrapper .chk-line .list li .view {
+    width: auto;
+}
+
+.order_package-moadl.modal-cnt-wrapper .find-cnt-area {
+    max-width: 866px;
+}
+
+.search-select-area .nice-select {
+    margin: 0 0.5rem;
+}
+
+.order_package-moadl .store__search-tab .tab-desc {
+    height: calc(100vh - 47.8rem);
+}
+
+.order_package-moadl .store__search-tab .tab-desc .search-list-area .result-list {
+    max-height: calc(100vh - 57vh);
+}
+
+.order_package-moadl .store__search-tab {
+    top: 4.7rem;
+    left: 1.7rem;
+    background: #fff;
+    border-right: 1px solid #000;
+    border-top-right-radius: 5px;
+}
+
+.order_package-moadl .store__map {
+    min-height: 58.7rem;
+    border: 1px solid #000;
+}
+
+.order_package-moadl .store__search-tab {
+    min-height: 58.7rem;
+    border: 1px solid #000;
+}
+
+.order_package-moadl section.store__map {
+    width: 55%;
+}
+
+.order_package-moadl .store__map {
+    width: 100%;
+    float: right;
+}
+
+.store_btn_map {
+    margin-top: 1rem;
+}
+
+.store_btn_map li {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.info_search {
+    background: #393939;
+    color: #fff;
+}
+
+.save_store_btn {
+    background: #d4000b;
+    color: #fff;
+}
+
+.store__search-tab .tab-desc .search-list-area .result-list .list {
+    cursor: pointer;
+}
+
+.delivery_save_list_search .e_coupon_div {
+    width: 100%;
+}
+
+.delivery_save_list_search .e_coupon_div input::placeholder {
+    font-size: 1.4rem;
+}
+
+.delivery_save-moadl .terms-cnt-wrapper .l-m-tit {
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 2rem;
+}
+
+.delivery_save_list_search {
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.ex_box_G {
+    background: #f0f0f0;
+    padding: 3rem;
+    margin: 3rem 0;
+}
+
+.ex_box_list_ul li {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.G_font_ex {
+    color: #999;
+    margin-left: 1rem;
+}
+
+.ex_box_list_ul li:nth-child(1) b {
+    font-size: 1.5rem;
+}
+
+.delivery_save_list_search .inside_ul li,
+.delivery_save_list_search .inside_ul li .text_span {
+    font-size: 1.3rem;
+    color: #DC0003;
+}
+
+.delivery_save-moadl.modal-cnt-wrapper .find-cnt-area {
+    height: 75vh;
+    overflow: auto;
+}
+
+.summernote_style .note-editable {
+    min-height: 50vh;
+    background: #fffcf9;
+}
+
+.summernote_style .note-editor.note-airframe,
+.summernote_style .note-editor.note-frame {
+    max-width: 624px;
+    border: 1px solid #000;
+}
+
+.summernote_style .note-editor .note-toolbar,
+.summernote_style .note-popover .popover-content {
+    border-bottom: 1px solid #000;
+}
+
+.delivery_tab_content_list {
+    display: none;
+}
+
+.delivery_tab_content_list.tab_content_on {
+    display: block;
+}
+
+.delivery_tab_list_small {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0;
+    border-bottom: 1px solid #4f4e4d;
+    clear: both;
+}
+
+.delivery_tab_list_small li {
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1.3rem;
+    cursor: pointer;
+}
+
+.delivery_tab_list_small li.tab_on {
+    background: #4f4e4d;
+    color: #fff;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.delivery_save_list_open_02 .delivery_save_list_search li {
+    height: auto;
+    overflow: hidden;
+}
+
+.delivery_save_list_open_02 .delivery_save_list_search li.result_text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.delivery_save_list_open_02 .delivery_save_list_search li.advice_text {
+    color: #e90202;
+    font-size: 1.2rem;
+}
+
+.b_name {
+    color: #1881FF;
+    font-weight: 800;
+    margin-right: 2%;
+}
+
+.delivery_search_list_result {
+    width: 80%;
+}
+
+.delivery_search_list_result li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.delivery_search_list_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+}
+
+.postal {
+    font-size: 1.5rem;
+    width: 20%;
+    text-align: center;
+    font-weight: 800;
+}
+
+.address_01,
+.address_02 {
+    line-break: anywhere;
+}
+
+.delivery_save-moadl .delivery_tab_content_list {
+    overflow: auto;
+    max-height: 386px;
+}
+
+.search_name_delivery {
+    font-weight: 800;
+}
+
+.delivery_save-moadl .advice_text .text_span {
+    color: #e90202;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+.cart__order-total dd {
+    margin: 0 1rem;
+}
+
+.cart__order-total {
+    justify-content: center;
+    background: #f6e6d9;
+    padding: 4rem 0;
+}
+
+.cart__order-total dt {
+    margin: 0 5rem;
+}
+
+.cart__order-total dd.symbol_icon {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.cart__order-total dd.red_font {
+    color: #DC0003;
+    margin-left: 0.5rem;
+}
+
+.red_font {
+    color: #DC0003;
+    margin-left: 0.5rem;
+}
+
+.cart__order-total dd.font_size_b_800 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.font_size_b_800 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.cart__order-total dd .l-num {
+    margin-left: 0.5rem;
+}
+
+.all_cancle-btn {
+    color: #fff;
+    background: #000;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+}
+
+.cart__order {
+    position: relative;
+}
+
+.cart__order-table .cancle-btn {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    border: 1px solid #000;
+}
+
+.cart__order-table .list-table tr {
+    position: relative;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.cart__order-table .list-table tr:last-child {
+    border-bottom: 0;
+}
+
+.cart__order-table .list-table {
+    border-collapse: collapse;
+}
+
+.cart__order-table .item-desc .name {
+    margin-top: 0;
+}
+
+.mo_minus_icon {
+    display: none;
+    color: #dc0003;
+}
+
+.map_agree-moadl .l-scroll-style {
+    width: 100%;
+    height: 395px;
+    resize: none;
+    font-size: 1.4rem;
+    word-break: keep-all;
+    overflow: auto;
+    white-space: pre-line;
+}
+
+.popup_table {
+    border: 1px solid #999;
+    margin: 1rem 0;
+}
+
+.popup_table th {
+    background: #eee;
+}
+
+.popup_table th,
+.popup_table td {
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 4%;
+}
+
+.popup_table th:last-child,
+.popup_table td:last-child {
+    border-right: 0;
+}
+
+.popup_table tr:last-child td {
+    border-bottom: 0;
+}
+
+.map_agree-moadl .l-scroll-style b {
+    font-size: 1.5rem;
+}
+
+.no-members .list {
+    margin: 1rem 0 3rem;
+    padding: 0 3rem;
+}
+
+.no-members .list li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.no-members .list li span {
+    width: 80%;
+    color: #444;
+}
+
+.no-members .list li a {
+    margin-left: 1rem;
+    color: #000;
+    font-weight: 600;
+    text-align: right;
+}
+
+.login .no-members .l-chk {
+    margin: 1.2rem 0 1.6rem;
+}
+
+.no-members .join__input {
+    padding-bottom: 0;
+}
+
+.address_user {
+    font-size: 1.5rem;
+}
+
+.join__input .input-area .sec-line .right .selectpicker {
+    width: 100%;
+    min-width: auto;
+    height: 40px;
+    font-size: 1.5rem;
+}
+
+.join__input .input-area .sec-line .right.address_select .selectpicker {
+    margin-bottom: 1rem;
+}
+
+.join__input .input-area .sec-line .right .inline_block {
+    display: flex;
+}
+
+.join__input .input-area .sec-line .right .inline_block li {
+    margin: 0 1rem 0 0;
+}
+
+.join__input .input-area .sec-line .right .inline_block li .selectpicker {
+    margin-bottom: 0;
+    margin-right: 1rem;
+}
+
+.bg_G {
+    background: #999;
+    color: #fff;
+    width: 50px;
+    text-align: center;
+    padding: 0.2rem 0;
+    border-radius: 10px;
+    margin-bottom: 0.3rem;
+}
+
+.join__input .input-area .sec-line .right.radio-area,
+.join__input .input-area label.title {
+    margin-top: 0.5rem;
+}
+
+.join__input .input-area .sec-line {
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.join__input .input-area .address-line {
+    margin-bottom: 2.4rem;
+}
+
+.payment .msg-select-box .textarea-area {
+    margin-top: 0;
+}
+
+.payment__price-list .total {
+    padding: 2.4rem 1rem;
+    background: #F5ECE4;
+    border-bottom: 0;
+    border-top: 1px solid #000;
+}
+
+.payment__price-list .total dt,
+.payment__price-list .total dd,
+.payment__price-list .total dd .l-num {
+    color: #d4000b;
+}
+
+.payment__price-list {
+    background: #F5ECE4;
+    padding: 1rem 2rem 1.5rem;
+}
+
+.payment .msg-select-box {
+    width: 100%;
+}
+
+.payment__price-list .list dt {
+    width: 67%;
+}
+
+.G_bg_round {
+    background: #999;
+    cursor: pointer;
+    padding: 0.3rem 0.7rem;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 800;
+}
+
+.e_coupon-moadl .textarea {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.e_coupon-moadl .terms-cnt-wrapper .l-m-tit {
+    margin-bottom: 0;
+}
+
+.e_coupon-moadl .l-scroll-style {
+    overflow: auto;
+    height: 395px;
+}
+
+.payment .join__input .input-area .sec-line .right.radio-area {
+    justify-content: space-between;
+}
+
+.payment .join__input .input-area .sec-line .right.radio-area .l-radio {
+    margin-right: 1rem;
+}
+
+.bg_G_th {
+    background: #4f4f4f;
+    color: #fff;
+    width: 75%;
+    text-align: center;
+}
+
+.cancel_mask {
+    background: #fbf5f0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    color: #d4000b;
+}
+
+.e_coupon_barcode {
+    margin-bottom: 10rem;
+    padding-top: 4%;
+}
+
+.e_coupon_barcode .e_coupon_barcode_ul {
+    display: flex;
+}
+
+.e_coupon_barcode .e_coupon_barcode_ul li {
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.e_coupon_barcode .e_coupon_barcode_ul li:first-child {
+    border-right: 1px solid #999;
+}
+
+.e_coupon_barcode .e_coupon_barcode_ul li img {
+    max-width: 350px;
+    margin: 1rem 0;
+}
+
+.e_coupon_barcode .e_coupon_barcode_ul li i {
+    display: block;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.e_coupon_g_box {
+    position: relative;
+    background: #f5ece4;
+    padding: 3.7rem 0;
+    max-width: 350px;
+    margin: 3rem auto 0;
+}
+
+.e_coupon_barcode .e_coupon_barcode_ul li span {
+    line-height: 1.4;
+}
+
+.e_coupon_red_box {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: #d4000b;
+    padding: 2% 3%;
+    border-radius: 10px;
+}
+
+.e_coupon_g_box b,
+.e_coupon_g_box span.red_font {
+    font-size: 1.8rem;
+}
+
+.b_font_link {
+    color: #005CFF;
+    font-size: 1.5rem;
+    margin-left: 5px;
+    border-bottom: 1px solid #005CFF;
+}
+
+/*헤더수정*/
+#header .btn-cnt-area .cart-btn {
+    width: 2.6rem;
+    height: 2.6rem;
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/cart_icon.svg) center no-repeat;
+    background-size: cover;
+    margin-right: 3.8rem;
+}
+
+.log_box {
+    display: flex;
+}
+
+.log_box div {
+    margin: 0 1rem;
+    display: inline-flex;
+    font-size: 1.5rem;
+    /* font-weight: 800; */
+    font-family: 'Rubik';
+    cursor: pointer;
+}
+
+.cart_count {
+    position: absolute;
+    right: -15px;
+    top: 5px;
+    background: #d4000b;
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 2rem;
+}
+
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+}
+
+#header .btn-cnt-area {
+    margin-top: -10px;
+    ;
+}
+
+#header .sub-menu-btn {}
+
+.main-box .goobne-btn-box button span {
+    font-family: 'NanumSquareRound';
+}
+
+.error_text_box {
+    text-align: center;
+    font-weight: 700;
+    margin: 2rem 0;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.join__complete .error_img {
+    padding-left: 3rem;
+}
+
+.order_list_table.order_list_none {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/*결제하기-결제방법수정*/
+.l-radio_btn {
+    width: 100%;
+}
+
+.l-radio_btn input[type=radio] {
+    display: none;
+}
+
+.l-radio_btn input[type=radio]+label {
+    display: inline-block;
+    cursor: pointer;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #333;
+    line-height: 90px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+
+
+}
+
+.l-radio_btn input[id="radio-03"]+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/credit.svg) no-repeat center 17px;
+    background-size: 20px;
+}
+
+.l-radio_btn input[id="radio-03"]:checked+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/credit_w.svg) no-repeat center 17px;
+    background-size: 20px;
+}
+
+.l-radio_btn input[id="radio-01"]+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/naver_pay.svg) no-repeat center 17px;
+    background-size: 40px;
+}
+
+.l-radio_btn input[id="radio-01"]:checked+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/naver_pay_w.svg) no-repeat center 17px;
+    background-size: 40px;
+}
+
+.l-radio_btn input[id="radio-02"]+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/kakao_pay.svg) no-repeat center 17px;
+    background-size: 40px;
+}
+
+.l-radio_btn input[id="radio-02"]:checked+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/kakao_pay.svg) no-repeat center 17px;
+    background-size: 40px;
+}
+
+.l-radio_btn input[id="radio-04"]+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/credit_bak.svg) no-repeat center 17px;
+    background-size: 26px;
+}
+
+.l-radio_btn input[id="radio-04"]:checked+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/credit_bak_w.svg) no-repeat center 17px;
+    background-size: 26px;
+}
+
+.l-radio_btn input[id="radio-05"]+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/cash.svg) no-repeat center 17px;
+    background-size: 20px;
+}
+
+.l-radio_btn input[id="radio-05"]:checked+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/cash_w.svg) no-repeat center 17px;
+    background-size: 20px;
+}
+
+.l-radio_btn input[id="radio-06"]+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/payco.svg) no-repeat center 20px;
+    background-size: 55px;
+}
+
+.l-radio_btn input[id="radio-06"]:checked+label {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/payco.svg) no-repeat center 20px;
+    background-size: 55px;
+}
+
+.l-radio_btn input[type=radio]+label {
+    color: #333;
+    padding-left: 0;
+}
+
+.l-radio_btn input[type=radio]:checked+label {
+    background-color: #333;
+    color: #fff;
+
+}
+
+.l-radio_btn input[type="radio"]+label:after {
+    display: none;
+}
+
+.cart__order-table .list-table td {
+    position: relative;
+}
+
+.store__search-tab .tab-desc .search-list-area .result-list .list .desc {
+    width: 100%;
+}
+
+.join__input .selectpicker {
+    border-color: #000;
+}
+
+.recom-cnt-wrapper .swiper-backface-hidden .swiper-slide {
+    cursor: pointer;
+}
+
+.m_font {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.distinction {
+    margin-right: 1rem;
+}
+
+.userinfoConfirm .icon_img_user {
+    width: 70px;
+}
+
+.userinfoConfirm .m_font br {
+    display: none;
+}
+
+.title_icon_img_user {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.userinfoConfirm_ul {
+    margin: 1rem 0;
+    width: 67%;
+    margin: 5rem auto;
+}
+
+.userinfoConfirm_ul li {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.userinfoConfirm_ul li .distinction {
+    width: 15%;
+}
+
+.userinfoConfirm_ul li input {
+    border: 1px solid #000;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 1rem;
+    width: 55%;
+}
+
+.userinfoConfirm_ul li button {
+    margin-left: 1rem;
+    background: #000;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    width: 20%;
+}
+
+.personal_info_ch.my_correction_maket .inline_block li {
+    margin-right: 2rem;
+}
+
+#m_mylocation {
+    width: 100%;
+}
+
+#header .search-area .input-search {
+    border-bottom: 0;
+}
+
+#header .search-area .input-search {
+
+
+    width: 100% !important;
+    text-align: center;
+    margin-left: -4%;
+}
+
+#header .search-area.mo-search-area {
+    margin-left: 1%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding-left: 2%;
+}
+
+#header .search-area.mo-search-area.center_only {
+    margin-left: 4%;
+}
+
+#header .search-area {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.store__map .map-icon-item {
+    bottom: 0;
+}
+
+.store_info_box {
+    display: flex;
+    align-items: center;
+    background: rgb(255 255 255);
+    padding: 0.5% 2%;
+    border-radius: 20px;
+}
+
+.now-store-area .l-inner .text {
+    font-size: 2.3rem;
+    color: #000;
+    font-weight: 800;
+}
+
+.delivery_set_get {
+    text-align: center;
+    padding: 2rem 0 5rem;
+    font-size: 1.5rem;
+}
+
+.delivery_set_get .delivery_set-img {
+    width: 25px;
+    margin-right: 0.5rem;
+}
+
+.delivery_set_get button {
+    margin-top: 1rem;
+    background: #000;
+    color: #fff;
+    padding: 3% 0;
+    width: 75%;
+    font-weight: 800;
+    border-radius: 8px;
+}
+
+.delivery_set_text {
+    line-height: 1.4;
+}
+
+.email_inline .nice-select .list {
+    left: auto;
+    right: 0;
+}
+
+.red_back_btn {
+    background: #d4000b;
+    border: 1px solid #d4000b;
+}
+
+.btn_div_login {
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+.ad_span {
+    color: #ffd8d8;
+    position: absolute;
+    right: 0.8rem;
+    bottom: 0.8rem;
+    height: 11px;
+    line-height: 11px;
+    font-size: 11px;
+}
+
+.shopping-address-wrap .search-list-area .result-list .list .btn button {
+    width: 12rem;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+
+.order_icon_img {
+    width: auto;
+    height: 3.5rem;
+    margin-left: -8px;
+}
+
+.shopping-address-wrap .search-list-area .result-list .list {
+    position: relative;
+}
+
+.shopping-address-wrap .search-list-area .result-list .list .btn {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+
+.display_inline {
+    display: flex;
+    justify-content: space-around;
+}
+
+.display_inline li {
+    width: 50%;
+}
+
+.display_inline li:first-child {
+    background: #fff;
+}
+
+.display_inline li:first-child .center_span_text {
+    color: #000;
+}
+
+.notice__lookup .nice-select,
+.notice__lookup input,
+.notice__lookup .l-btn {
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.goob_time_icon {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.menu-time-wrapper .menu-time-list .area__slide-desc .tit {
+    line-height: 1.2;
+}
+
+.l-main-bg {
+    background-color: #F9E6D3;
+    padding: 15rem 0 10rem;
+}
+
+#wrap {
+    background: #FBF5F0;
+}
+
+.con_wrap {
+    width: 1700px;
+    margin: auto;
+    position: relative;
+}
+
+.con-box {
+    padding-top: 23rem;
+}
+
+.con-box .title {
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serif;
+}
+
+.l-main-title {
+    margin-bottom: 10rem;
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serif;
+}
+
+.con-box .title span.instar {
+    padding-left: 9.5rem;
+    background: url(../../images/common/title-instar.svg) center left 0 no-repeat;
+    background-size: 6.6rem;
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serif;
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: calc(100% - 11rem);
+    padding: 11rem 0 5rem;
+}
+
+.main-box .main-txt-area {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-box .goobne-text {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.main-box .goobne-text.line {
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    width: 100%;
+    margin: 0;
+    margin-top: 3rem;
+    z-index: 1;
+}
+
+.main-box .goobne-text .last {
+    transform: translateY(-3rem);
+}
+
+.main-box .goobne-text p,
+.main-box .goobne-text span {
+    color: #D4000B;
+    font-size: 9rem;
+    font-weight: 700;
+    font-family: 'Rubik';
+    -webkit-text-stroke: 1px #d4000b;
+}
+
+.main-box .goobne-text .mid,
+.main-box .goobne-text.line .mid {
+    font-size: 9rem;
+}
+
+.main-box .goobne-text.line p,
+.main-box .goobne-text.line span {
+    color: #FBF5F0;
+    font-size: 9rem;
+    font-weight: 700;
+    font-family: 'Rubik';
+    -webkit-text-stroke: 2px #d4000b;
+}
+
+
+/* .main-box .goobne-text::after {
+    content: " Welcome to the \A Oven Universe";
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+    font-size: inherit;
+    font-weight: inherit;
+    width: 100%;
+    -webkit-text-stroke: 1px #D4000B;
+    color: transparent;
+    white-space: pre;
+} */
+
+.main-box .goobne-bg {
+    width: 950px;
+    margin: auto;
+    position: relative;
+}
+
+.main-box .goobne-bg .goobne-img {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.main-box .goobne-bg .goobne-btn.btn1 {
+    display: block;
+    width: 29rem;
+    position: absolute;
+    background: none;
+    top: 2rem;
+    left: -6rem;
+}
+
+.main-box .goobne-bg .goobne-btn.btn1 {
+    animation: rotate 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.main-box .goobne-bg .goobne-btn.btn2 {
+    animation: rotate2 2s;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.main-box .goobne-bg .goobne-menu-btn {
+    position: absolute;
+    width: 19.5rem;
+    height: 6.3rem;
+    background: #CCF180;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    font-size: 3.2rem;
+    font-weight: 700;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 1);
+    transition: all 0.3s;
+    font-family: 'Rubik';
+}
+
+.main-box .goobne-bg .goobne-menu-btn.btn1 {
+    bottom: 10rem;
+    left: -8rem;
+    transform: rotate(-20deg);
+    background: #AABBFF;
+}
+
+.main-box .goobne-bg .goobne-menu-btn.btn2 {
+    top: 3rem;
+    right: -5rem;
+    transform: rotate(10deg);
+    background: #FFAC9F;
+}
+
+.main-box .goobne-bg .goobne-menu-btn.btn1:hover {
+    margin-bottom: 2rem;
+}
+
+.main-box .goobne-bg .goobne-menu-btn.btn2:hover {
+    margin-top: -2rem;
+}
+
+
+.main-box .goobne-bg .goobne-btn.btn1 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-27deg);
+    font-size: 2.4rem;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.main-box .goobne-bg .goobne-btn.btn2 {
+    display: block;
+    width: 29rem;
+    position: absolute;
+    right: -10rem;
+    bottom: 3rem;
+    transition: all 0.3s;
+    background: none;
+}
+
+/*.main-box .goobne-bg .goobne-btn.btn1:hover {
+    margin-top: -1rem;
+    transition: all 0.3s;
+}
+
+.main-box .goobne-bg .goobne-btn.btn2:hover {
+    margin-bottom: 1rem;
+    transition: all 0.3s;
+}*/
+
+.main-box .goobne-bg .goobne-btn.btn1 span::before {
+    content: "NEW";
+    display: block;
+    font-size: 4.1rem;
+    font-weight: 700;
+    margin: auto;
+    position: absolute;
+    top: -4.5rem;
+    left: 0rem;
+    color: #D4000B;
+    font-family: 'Rubik';
+}
+
+.main-box .goobne-btn-box {
+    position: fixed;
+    bottom: 7rem;
+    right: 5rem;
+    z-index: 100;
+}
+
+.main-box .goobne-btn-box button {
+    width: 13rem;
+    height: 13rem;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 50%;
+    font-family: 'Rubik';
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.16);
+}
+
+.main-box .goobne-btn-box button+button {
+    margin-top: 2rem;
+}
+
+.main-box .goobne-btn-box button span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 8.5rem;
+    font-weight: 800;
+}
+
+.main-box .goobne-btn-box button.order {
+    background: #D4000B;
+}
+
+.main-box .goobne-btn-box button.order span {
+    background: url(../../images/common/order.svg) top 2rem center no-repeat;
+    color: #fff;
+}
+
+.main-box .goobne-btn-box button.coupon {
+    background: #fff;
+}
+
+.main-box .goobne-btn-box button.universe_go {
+    background: #7c2810;
+}
+
+.main-box .goobne-btn-box button.coupon span {
+    background: url(../../images/common/e_coupon.svg) top 3.7rem center no-repeat;
+    color: #D4000B;
+}
+
+.main-box .goobne-btn-box button.universe_go span {
+    background: url(https://www.goobne.co.kr/resources/assets/images/icon/go_2.svg) top 2.7rem center no-repeat;
+    color: #f8ea89;
+}
+
+.main-box .menu-text {
+    font-size: 8.5rem;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serif;
+}
+
+.main-box .con_wrap {
+    padding-top: 16.5rem;
+    padding-bottom: 6rem;
+}
+
+.menu-box {
+    width: 100%;
+    padding: 10rem 0;
+    background: rgba(227, 130, 17, 0.13);
+    background-size: cover;
+}
+
+.menu-box .inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu-box .menu-list-wrap {
+    display: block;
+    width: calc(100% + 120px);
+    margin-left: 40px;
+}
+
+.menu-box .menu-list-wrap .menu-list {
+    margin-right: 10rem;
+    position: relative;
+    display: block;
+}
+
+.menu-box .menu-list-wrap .menu-list.top {
+    margin-top: 13rem;
+}
+
+.menu-box .menu-list-wrap .menu-list:last-child {
+    margin-right: 0;
+}
+
+.menu-box .menu-list-wrap .menu-list .menu-img {
+    border: 2px solid #000;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.menu-box .menu-list-wrap .menu-list img {
+    width: 100%;
+}
+
+.menu-box .menu-list-wrap .menu-list .menu-name {
+    width: 100%;
+    height: 8.8rem;
+    line-height: 8.8rem;
+    background: rgba(33, 33, 33, 0.76);
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    font-size: 3.2rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0 0 1rem 1rem;
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serif;
+}
+
+.menu-box .slick-slide {
+    margin: 0 50px;
+}
+
+.menu-box .slick-list {
+    margin: 0 -50px;
+}
+
+.event-list-wrap {
+    margin-top: 16rem;
+}
+
+/* 230130 수정 */
+.news_view_more_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    border: solid 1px #212121;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 77px;
+}
+
+@media (max-width:768px) {
+    .news_view_more_btn {
+
+        font-size: 18px;
+    }
+}
+
+.news_view_more_btn::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 17px;
+    margin-left: 11px;
+    background: url(../../images/icon/c-arrow-right-bk.svg) no-repeat;
+    background-size: cover;
+    transform: translateY(2px);
+}
+
+@media (max-width:500px) {
+    .news_view_more_btn {
+        /*         width: 100%; */
+        margin-top: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .news_view_more_btn::after {
+        width: 8px;
+        height: 14px;
+        transform: translateY(0px);
+    }
+}
+
+/* //230130 수정 */
+.event-list-wrap .event-list {
+    border-top: 1px solid #050000;
+    box-sizing: border-box;
+    padding: 5rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.event-list-wrap .event-list:hover {
+    background: #000;
+}
+
+.event-list-wrap .event-list:hover .event-title .main-text {
+    color: #fff;
+}
+
+.event-list-wrap .event-list:hover .status .sub {
+    color: #fff;
+}
+
+.event-list-wrap .event-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.event-list-wrap .event-list:last-child {
+    border-bottom: 1px solid #050000;
+}
+
+.event-list-wrap .event-list.on {
+    background: url(../../images/common/list-arrow.svg) center right 4.5rem no-repeat;
+}
+
+.event-list-wrap .event-list.on:hover {
+    background: url(../../images/common/list-arrow.svg) center right 4.5rem no-repeat #000;
+}
+
+.event-list-wrap .event-list .half {
+    width: 480px;
+    float: left;
+}
+
+.event-list-wrap .event-list .half+.half {
+    width: calc(100% - 480px);
+}
+
+.event-list-wrap .event-list .mo-thum {
+    display: none;
+}
+
+.event-list-wrap .event-list .status .sub {
+    font-size: 3rem;
+    font-weight: 700;
+    text-indent: 50px;
+}
+
+.event-list-wrap .event-list .event-title {
+    cursor: pointer;
+}
+
+.event-list-wrap .event-list .event-title .sub {
+    font-size: 2rem;
+    color: #000;
+    margin-top: 4px;
+}
+
+.event-list-wrap .event-list .event-title .main-text {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #000;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.event-list-wrap .event-list .event-img {
+    width: 40rem;
+    position: absolute;
+    right: 12rem;
+    top: -13rem;
+    transform: rotate(-12deg);
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.event-list-wrap .event-list .event-img img {
+    border-radius: 7px;
+}
+
+.event-list-wrap .event-list.on .event-img {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.goobster-box-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.goobster-box {
+    margin-top: 8.5rem;
+    width: calc(100% + 70px);
+    margin-left: -35px;
+    position: relative;
+}
+
+.goobster-box .img {
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+/*.goobster-box::before {
+    content: "";
+    width: 36rem;
+    height: 36rem;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.goobster-box::after {
+    content: "";
+    width: 36rem;
+    height: 36rem;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}*/
+
+.goobster-box .slick-slide {
+    margin: 0 20px;
+}
+
+.goobster-box .slick-list {
+    margin: 0 -20px;
+}
+
+.goobne-slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 9rem;
+    border-top: 1px solid #050000;
+    border-bottom: 1px solid #050000;
+    box-sizing: border-box;
+    margin-top: 9rem;
+}
+
+.goobne-slider .goobne-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.goobne-slider .goobne-wrapper .goobne-line {
+    display: flex;
+    height: 100%;
+}
+
+.goobne-slider .goobne-wrapper .goobne-line .goobne-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 3.2rem;
+    font-family: 'Rubik', 'NanumSquareRound', 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+@keyframes translatestf {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+.goobne-wrapper .goobne-line {
+    width: 500%;
+}
+
+.goobne-wrapper .goobne-line .goobne-text {
+    animation: translatestf 25s linear infinite;
+}
+
+@keyframes translateinfinite {
+    100% {
+        transform: translateX(calc(-180px * 12));
+    }
+}
+
+.goobne-wrapper {
+    background: transparent;
+}
+
+.goobne-wrapper .goobne-line {
+    width: calc(430px * 15);
+}
+
+.goobne-wrapper .goobne-line .goobne-text {
+    width: 180px;
+    animation: translateinfinite 25s linear infinite;
+}
+
+.goobne-tv-box {
+    width: 1600px;
+    margin: 10rem auto 0 auto;
+}
+
+.goobne-tv-box .slick-slide {
+    margin: 0 20px;
+}
+
+.goobne-tv-box .goobne-tv-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goobne-tv-box .goobne-tv-wrap .img-box {
+    width: calc(33.333% - 26.66px);
+}
+
+.goobne-tv-box .goobne-tv-wrap .img-box.center {
+    width: calc(33.333% - 26.66px);
+}
+
+.goobne-tv-box .goobne-tv-wrap .img-box a {
+    display: block;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.goobne-tv-box .tv-btn {
+    width: 17.5rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    display: block;
+    margin: 8rem auto 0 auto;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 700;
+    background: #212121;
+}
+
+.web {
+    display: block;
+}
+
+.mobile {
+    display: none !important;
+}
+
+/* 추가 -  메인 배너 dot 스타일 영역 */
+.main-vi-wrap {
+    position: relative;
+}
+
+.main-vi-wrap .slick-dots {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-vi-wrap .slick-dots li {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.10);
+    margin: 0 8.5px;
+    box-sizing: border-box;
+}
+
+.main-vi-wrap .slick-dots li.slick-active {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border: 6px solid #D60018;
+}
+
+.main-vi-wrap .slick-dots li button {
+    display: none;
+}
+
+< !-- 프로모션 팝업 영역 --><article id="promo" class="modal-cnt-wrapper promo-moadl l-hidden"><style>.promo_info_text {
+    font-size: 13px;
+    color: #c44830;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.promo_info_text br {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .modal-cnt-wrapper .adderss-cnt-width {
+        height: auto;
+    }
+
+    .promo_info_text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .promo_info_text br {
+        display: block;
+    }
+}
+
+</style><div id="promo_bg" class="dimmed-bg l-hidden"></div><div class="modal-cnt-area find-cnt-area adderss-cnt-width"><button type="button" class="close closeBtn"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/icon/m-close.svg"
+alt="닫기버튼"></button><div class="shopping-address-wrap">< !-- <div class="l-m-tit">배송지설정</div><div class="search-cnt-group"><div class="input-btn-area"><input type="text" placeholder="배송지를 설정하고 매장을 선택해주세요."><button type="button" class="search-btn"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/icon/c-store-search.png"
+alt="검색이미지"></button></div><div class="local-cnt-area"><button type="button" class="search-btn"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/icon/l-m-setting.svg"
+alt="아이콘이미지"></button><input type="text" placeholder="현 위치로 위치 설정"></div></div>--><div class="l-m-tit">가까운 매장</div>< !--S: 추가된 부분 ---><div id="deliveryArea"></div>< !--E: 추가된 부분 --->< !-- <div class="search-list-area mt" style="padding-top:20px;">--><div class="promo_info_text">※준비시간은 매장상황에 따라 다르게<br>안내될 수 있습니다.</div><div class="search-list-area mt"><div class="result-num">< !-- 현재위치의 주소와 가까운 매장입니다. --></div><div class="result-list l-scroll-style" id="promoList"><div class="list"><div class="icon bk"></div><div class="desc"><dl><dt class="name">행당점 (0.4km)</dt><dd class="local">서울특별시 성동구 행당로 79 해당텍스트 2 줄 까지 노출됩니다.해당텍스트 2 </dd><dd class="num">02-2294-9294</dd></dl><p class="promo"><span class="l-num">#</span>수요일 방문 포장 <span class="l-num">50%</span>할인 </p><div class="msg"><div class="msg-line"><span>1km 배달비 : 5,
+000원</span><span class="bar"></span><span>최소주문금액 : 15,
+000원</span></div><div class="msg-line"><span>예상 주문시간 : 1hour</span><span class="bar"></span><span>드라이브 픽업 : 가능</span></div></div><div class="icon-list"><button type="button" class="l-coupon"></button><button type="button" class="l-receipt"></button><button type="button" class="l-cart"></button></div></div><div class="btn"><button type="button" class="chk">선택하기</button><button type="button" class="like is-active"><i class="star"></i>찜하기</button></div></div><div class="list"><div class="icon red"></div><div class="desc"><dl><dt class="name">성수 1호점</dt><dd class="local">서울특별시 성동구 행당로 79 해당텍스트 2 줄 까지 노출됩니다. </dd><dd class="num">02-2294-9294</dd></dl><p class="promo"><span class="l-num">#</span>수요일 방문 포장 <span class="l-num">50%</span>할인 </p><div class="msg"><div class="msg-line"><span>1km 배달비 : 5,
+000원</span><span class="bar"></span><span>최소주문금액 : 15,
+000원</span></div><div class="msg-line"><span>예상 주문시간 : 1hour</span><span class="bar"></span><span>드라이브 픽업 : 가능</span></div></div><div class="icon-list"><button type="button" class="l-coupon"></button><button type="button" class="l-receipt"></button><button type="button" class="l-cart"></button></div></div><div class="btn"><button type="button" class="chk">선택하기</button><button type="button" class="like"><i class="star"></i>찜하기</button></div></div><div class="list"><div class="icon bk"></div><div class="desc"><dl><dt class="name">상왕십리역점</dt><dd class="local">서울특별시 성동구 행당로 79</dd><dd class="num">02-2294-9294</dd></dl><p class="promo"><span class="l-num">#</span>수요일 방문 포장 <span class="l-num">50%</span>할인 </p><div class="msg"><div class="msg-line"><span>1km 배달비 : 5,
+000원</span><span class="bar"></span><span>최소주문금액 : 15,
+000원</span></div><div class="msg-line"><span>예상 주문시간 : 1hour</span><span class="bar"></span><span>드라이브 픽업 : 가능</span></div></div><div class="icon-list"><button type="button" class="l-coupon"></button><button type="button" class="l-receipt"></button><button type="button" class="l-cart"></button></div></div><div class="btn"><button type="button" class="chk">선택하기</button><button type="button" class="like"><i class="star"></i>찜하기</button></div></div></div></div></div></div></article>< !-- // 프로모션 팝업 영역  --> 
+
+< !-- 공통 커스텀 js --><script type="text/javascript">var CONTEXT_PATH="https://www.goobne.co.kr";
+
+
+<style>.main-box .goobne-img_office_bg_RJMWZ {
+    background: url("https://cdn.goob-ne.com/goobne/img/banner/9d73d4c46aca49c3841631597929a306.jpg") center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-box .goobne-img_office_bg_MW9CA {
+    background: url("https://cdn.goob-ne.com/goobne/img/banner/feb9a03af033494e88691c445c79b948.jpg") center;
+    background-size: cover;
+}
+
+
+
+
+
+.main-box .goobne-img_office_bg_3CV06 {
+    background: url("https://cdn.goob-ne.com/goobne/img/banner/a4b2d21156d44e3e8c877a27b14baa68.jpg") center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-box .goobne-img_office_bg_DNF3C {
+    background: url("https://cdn.goob-ne.com/goobne/img/banner/805388eb5e9a449688d3f22d9d258e89.jpg") center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+</style></head><body class="no-js">< !---S: 메인팝업---><script src="https://cdn.goob-ne.com/goobne/resources/assets/js/main/popup_main.js"></script><style>#window .single-item04 img {
+    max-height: 100%;
+    display: inline-block;
+}
+
+#window .single-item04 .slick-dots {
+    bottom: 10px;
+}
+
+#window .single-item04 .slick-dots {
+    text-align: center;
+    padding-left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.1% 2%;
+    border-radius: 20px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+#window .single-item04 .slick-dots li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3px;
+    line-height: 26px;
+    height: 26px;
+}
+
+#window .single-item04 .slick-dots li a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+#window .single-item04 .slick-dots li.slick-active a {
+    font-size: 3em;
+}
+
+#window .single-item04 .slick-dots li a:hover {
+    border-bottom: 0;
+}
+
+#ori {
+    visibility: hidden;
+}
+
+.btn_blk {
+    margin-top: 0px;
+}
+
+.img_map {
+    width: 100%;
+}
+
+area {
+    display: block;
+}
+
+.mobile_popup {
+    display: none;
+}
+
+<script>$(document).ready(function() {
+
+        //$('#popbg').empty(); 
+        /*레이어팝업 슬라이드*/
+        $('.single-item04').slick({
+            swipe : true,
+            autoplay:false,
+            autoplaySpeed:500,
+            /*fade:true,*/
+            cssEase:"ease",
+            easing:"ease",
+            centerMode: true,
+            centerPadding: '0',
+            dots: true,
+            arrows:false,
+            autoplay : true, // 자동 스크롤 사용 여부
+
+            autoplaySpeed : 3000,
+            customPaging : function(slider, i) {
+                var thumb=$(slider.$slides[i]).data();
+                // return '<a>'+(i+1)+'</a>';
+                return '<a>&bull;</a>';
+            }
+
+            ,
+        });
+});
+
+</script><script src="https://cdn.goob-ne.com/goobne/resources/assets/js/common/jquery.rwdImageMaps.js"></script><script>$(document).ready(function() {
+        $('img[usemap]').rwdImageMaps();
+        $('map').width('100%');
+    });
+</script><span id="popbg"><div id="mask_popup"></div></span>< !----S: 팝업 리스트----><div class="window" id="window"><div class="slider single-item04"><div class="list_slider"><a href="https://www.goobne.co.kr/brd/event/view?seq=67981" class="PC_popup"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/popup/230208_popup_pc_100.jpg"></a><a href="https://www.goobne.co.kr/brd/event/view?seq=67981" class="mobile_popup"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/popup/230208_popup_mo_100.jpg"></a></div><div class="list_slider"><a href="https://www.youtube.com/watch?v=B7prXDbB87I" class="PC_popup"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/popup/230213_popup_pc_goobcar.jpg"></a><a href="https://www.youtube.com/watch?v=B7prXDbB87I" class="mobile_popup"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/popup/230213_popup_mo_goobcar.jpg"></a></div><div class="list_slider"><a href="https://www.goobne.co.kr/menu/menu_new" class="PC_popup"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/popup/221108_popup_nhbasasak.jpg"></a><a href="https://www.goobne.co.kr/menu/menu_new" class="mobile_popup"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/popup/221123_popup_nhbasasak_mo.jpg"></a></div></div>< !-- 오늘그만보기,
+닫기 --><div class="btn_wrap btn_blk"><ul class="popup_btn_ul ori"><li id="todayPopChk" class="web_order" onClick="javascript:todaycloseWin();" style="background:#9f1818;">오늘 하루 보지 않기</li><li id="closePopChk" class="main_pop_close close" onClick="javascript:closeWin();" style="background:#9f1818;">닫기</li></ul></div>< !-- 오늘그만보기,
+닫기 --></div>< !----E: 팝업 리스트---->< !---E: 메인팝업--->< !-- start of :: wrap --><div id="wrap">< !-- start of :: header --><div id="header">< !-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJN5M9W"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>< !-- End Google Tag Manager (noscript) -->< !-- facebook meta tag --><meta name="facebook-domain-verification" content="xyqo59yr80wum94pqlbfemd8lktvmk" />< !-- facebook meta tag --><div class="loading-bar on"></div><div class="inner"><div class="logo"><a href="/index"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/common/logo.svg" alt="logo"></a></div><div class="search-area search-active"><button class="search-btn"></button><span id="mylocation"><input type="text" class="input-search" id="myloc" placeholder="" onclick="deliveryStore()"></span></div>< !-- 모바일 --><div class="search-area mo-search-area center_only"><button class="search-btn"></button><span id="m_mylocation"><input type="text" class="input-search" id="m_myloc" placeholder="" onclick="deliveryStore()"></span></div><div class="menu"><ul><li><a href="/account/login?return_url=/delivery/delivery_list">주문하기</a></li><li><a href="/menu/menu_main">메뉴소개</a></li><li><a href="/store/search_store">매장찾기</a></li><li><a href="/brd/const/franchise">창업안내</a></li><li><a href="/brd/event/list">이벤트</a></li></ul></div><div class="btn-cnt-area"><div class="login_div_box log_box"><div onClick="location.href='/account/login'">Login</div><div onClick="location.href='/join/join_base'">Join</div></div>< !-- <a href="/account/login" class="link"><div class="login-btn"></div></a>-->< !-- <button class="search-icon mobile"></button>--><div class="sub-menu-btn"><div class="line"></div><div class="line"></div><div class="line"></div></div></div></div></div>< !-- end of :: header --><aside class="aside"><div class="aside__dimmed-bg l-hidden"></div><div class="aside__lnb"><div class="aside__lnb-inner"><button type="button" class="aside__lnb-close"></button><div class="aside__lnb-login"><a href="/account/login" class="link">Login</a><span class="bar"></span><a href="/join/join_base" class="link">Join</a></div><div class="aside__scroll"><ul class="aside__lnb-list"><li><a href="/account/login?return_url=/delivery/delivery_list">주문하기</a></li><li><a href="/ecpn/ecoupon">e-쿠폰</a></li><li class="list-arrow"><a href="#none">신제품</a><ul class="dept "><li><a href="https://www.goobne.co.kr/menu/new?gubun=mdd">맵달떡볶이</a></li><li><a href="/menu/menu_new">남해마늘 바사삭</a></li></ul></li><li class="list-arrow"><a href="#none">메뉴소개</a><ul class="dept "><li><a href="/menu/menu_main">전체</a></li><li><a href="/menu/menu_list?class_id=10">치킨</a></li><li><a href="/menu/menu_list?class_id=11">피자</a></li><li><a href="/menu/menu_list?class_id=12">사이드</a></li><li><a href="/menu/menu_list?class_id=13">세트</a></li></ul></li><li><a href="/store/search_store">매장찾기</a>< !-- <ul class="dept"><li><a href="#none">월별 신규매장</a></li><li><a href="#none">국내매장</a></li><li><a href="#none">해외매장/GLOBAL</a></li></ul>--></li>< !-- <li><a href="#none">굽뉴스</a></li>--><li><a href="/brd/event/list">이벤트</a>< !-- <ul class="dept"><li><a href="#none">진행중인이벤트</a></li></ul>--></li><li><a href="/global">글로벌</a></li><li class="list-arrow"><a href="#none">창업안내</a><ul class="dept "><li><a href="/brd/const/franchise">프랜차이즈굽네</a></li><li><a href="/brd/const/process">창업프로세스 및 예상비용</a></li><li><a href="/brd/const/write">온라인 창업상담</a></li></ul></li><li class="list-arrow"><a href="#none">브랜드</a><ul class="dept "><li><a href="/brand">브랜드스토리</a></li><li><a href="/menu/new?gubun=phil">경영철학</a></li><li><a href="http://recruit.gn-food.co.kr/hmp/empmn/viewInfo.do?menuId=0901" target="_blank">인재채용</a></li></ul></li><li><a href="/account/login" class="link">굽민의소리</a></li><li><a href="/brd/notice/list">Goobnews</a></li></ul><dl class="aside__num"><dt>주문전화</dt><dd>1661-9494</dd></dl></div></div></div></aside>< !-- start of :: contents --><div id="content"><div class="inner"><div class="main-slick-wrap"><div class="main-vi-wrap"><div class="main-box main-box_hight"><div class="main-txt-area wow fadeInUp"><div class="goobne-text"><p>Welcome</p><p class="mid">to the</p><p class="last">Oven <span class="mid">Universe</span></p></div><div class="goobne-text line"><p>Welcome</p><p class="mid">to the</p><p class="last">Oven <span class="mid">Universe</span></p></div></div><div class="goobne-bg wow fadeInUp"><div class="goobne-img"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/main/goobne_bg_2.png" alt=""></div><button class="goobne-btn btn1"><div class="img"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/common/main_bg_icon_01.png" alt=""></div><span>✨최강의<br>바사삭 등장 !</span></button><button class="goobne-btn btn2"><div class="img"><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/common/main_bg_icon_05.svg" alt=""></div></button><button class="goobne-menu-btn btn1">Oven </button><button class="goobne-menu-btn btn2">Basasak </button></div></div><div class="main-box"><div class="goobne-bg goobne-bg02 wow fadeInUp goobne-img_office_bg goobne-img_office_bg_RJMWZ">< !---해상도 768일때 모바일 배경,
+이미지 변경----><div class="goobne-img goobne-img_office"><a href="https://www.goobne.co.kr/brd/event/view?seq=67765" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/29451548c39d4732819e54b1c3837d46.png" alt="" class="main_banner_PC"><img src="https://cdn.goob-ne.com/goobne/img/banner/0e6db8d0a9e94745b0522241e278cd17.png" alt="" class="main_banner_MO"></a></div></div></div><div class="main-box"><div class="goobne-bg goobne-bg02 wow fadeInUp goobne-img_office_bg goobne-img_office_bg_MW9CA">< !---해상도 768일때 모바일 배경,
+이미지 변경----><div class="goobne-img goobne-img_office"><a href="https://www.goobne.co.kr/menu/new?gubun=mdd" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/6dc1cf3d275b47eca270fd0061bb9777.png" alt="" class="main_banner_PC"><img src="https://cdn.goob-ne.com/goobne/img/banner/7a001b7a36ba4d47adae0e8c2877fcac.png" alt="" class="main_banner_MO"></a></div></div></div><div class="main-box"><div class="goobne-bg goobne-bg02 wow fadeInUp goobne-img_office_bg goobne-img_office_bg_3CV06">< !---해상도 768일때 모바일 배경,
+이미지 변경----><div class="goobne-img goobne-img_office"><a href="https://www.goobne.co.kr/brd/event/view?seq=66211" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/6052d3594b9b46e891cb0ce8adf18e6b.png" alt="" class="main_banner_PC"><img src="https://cdn.goob-ne.com/goobne/img/banner/54c159b0fc394620b6ef9f3a09c1d4b4.png" alt="" class="main_banner_MO"></a></div></div></div><div class="main-box"><div class="goobne-bg goobne-bg02 wow fadeInUp goobne-img_office_bg goobne-img_office_bg_DNF3C">< !---해상도 768일때 모바일 배경,
+이미지 변경----><div class="goobne-img goobne-img_office"><a href="https://www.goobne.co.kr/menu/menu_new" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/d9fc8d29ad1748c093abd1e84a0151c1.png" alt="" class="main_banner_PC"><img src="https://cdn.goob-ne.com/goobne/img/banner/e82afa78fcdb4c948fceb197b046d2c9.png" alt="" class="main_banner_MO"></a></div></div></div></div><div class="main-box"><div class="goobne-btn-box wow fadeInUp"><button class="order"><a href="/account/login?return_url=/delivery/delivery_list"><span>Order</span></a></button><button class="universe_go" onClick="window.open('http://www.xn--9i1b89owjy5lfa431as3k.com/')"><span>입장하기</span></button><button class="coupon"><a href="/ecpn/ecoupon"><span>e-쿠폰</span></a></button></div></div></div><div class="con-box menu-box"><div class="inner"><p class="l-main-title wow fadeInUp">Oven Menu</p><div class="menu-list-wrap wow fadeInUp"><a href="menu/menu_list?class_id=10" class="menu-list  top" target="self"><div class="menu-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/166490b5a60b466787067d0ac6ff4338.jpg" alt="CHICKEN"></div><p class="menu-name">CHICKEN</p></a><a href="/menu/menu_list?class_id=11" class="menu-list " target="self"><div class="menu-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/c50121c1413542e582c03c5dd6d715cc.jpg" alt="PIZZA"></div><p class="menu-name">PIZZA</p></a><a href="/menu/menu_list?class_id=12" class="menu-list  top" target="self"><div class="menu-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/9919f5df23a041deaa338ef75844777d.jpg" alt="DESSERT"></div><p class="menu-name">DESSERT</p></a><a href="menu/menu_list?class_id=13" class="menu-list " target="self"><div class="menu-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/a13a7ca55c254637a8561e5aabb81840.jpg" alt="BEST SET"></div><p class="menu-name">BEST SET</p></a><a href="menu/menu_list?class_id=10" class="menu-list  top" target="self"><div class="menu-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/166490b5a60b466787067d0ac6ff4338.jpg" alt="CHICKEN"></div><p class="menu-name">CHICKEN</p></a><a href="/menu/menu_list?class_id=11" class="menu-list " target="self"><div class="menu-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/c50121c1413542e582c03c5dd6d715cc.jpg" alt="PIZZA"></div><p class="menu-name">PIZZA</p></a><a href="/menu/menu_list?class_id=12" class="menu-list  top" target="self"><div class="menu-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/9919f5df23a041deaa338ef75844777d.jpg" alt="DESSERT"></div><p class="menu-name">DESSERT</p></a><a href="menu/menu_list?class_id=13" class="menu-list " target="self"><div class="menu-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/a13a7ca55c254637a8561e5aabb81840.jpg" alt="BEST SET"></div><p class="menu-name">BEST SET</p></a></div></div></div><div class="con-box"><div class="con_wrap"><p class="l-main-title wow fadeInUp">Goobnews</p><div class="event-list-wrap"><div class="event-list on wow fadeInUp"><a href="https://www.goobne.co.kr/brd/notice/view?seq=66873" target="self"><div class="mo-thum"><img src="https://cdn.goob-ne.com/goobne/img/banner/2611db1953264323a553beafecf89dea.png" alt=""></div><div class="status half"><p class="sub">[브랜드]</p></div><div class="event-title half"><p class="main-text">‘2022 대한민국광고대상’ TV 영상 부문 은상 수상…치킨업계 최초</p></div><div class="event-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/6017f2e7bd384e49bb9af6a4d4c37b17.png" alt=""></div></a></div><div class="event-list  wow fadeInUp"><a href="https://www.goobne.co.kr/brd/notice/view?seq=66272" target="self"><div class="mo-thum"><img src="https://cdn.goob-ne.com/goobne/img/banner/8e761eebc97549ddb965adc9f44aeb81.png" alt=""></div><div class="status half"><p class="sub">[신제품]</p></div><div class="event-title half"><p class="main-text">굽네치킨과 남해마늘의 바삭한 만남 !</p></div><div class="event-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/5c35366625ec467b9948312e48560781.jpg" alt=""></div></a></div><div class="event-list  wow fadeInUp"><a href="https://www.goobne.co.kr/brd/notice/view?seq=66216" target="self"><div class="mo-thum"><img src="https://cdn.goob-ne.com/goobne/img/banner/9f97246c65f24320b196517cabe56f24.png" alt=""></div><div class="status half"><p class="sub">[브랜드]</p></div><div class="event-title half"><p class="main-text">굽네,
+‘2022 소비자의 선택’ 10년 연속 대상 수상</p></div><div class="event-img"><img src="https://cdn.goob-ne.com/goobne/img/banner/5ffc5959d82b4127bc21e24ccdb404f8.png" alt=""></div></a></div></div></div><a href="/brd/notice/list" class="news_view_more_btn">더보기</a>< !-- //230130 수정 -->
+
+</div><div class="con-box"><div class="l-main-bg"><p class="title wow fadeInUp"><span class="instar">The Goobster</span></p><div class="goobster-box-wrap wow fadeInUp"><div class="goobster-box"><div class="img"><a href="https://www.instagram.com/p/CkmT8GHp5mq/?utm_source=ig_web_copy_link" class="menu-list" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/0b9439be8f8743b9ba79c2f6b752169e.png" alt="굽스터12_남해대첩"></a></div><div class="img"><a href="https://www.instagram.com/p/CfGZ5RYJzGX/?utm_source=ig_web_copy_link" class="menu-list" target="_new"><img src="https://cdn.goob-ne.com/goobne/img/banner/b05f58bd233444f49b0948f731d8e5db.png" alt="굽스터11"></a></div><div class="img"><a href="https://www.instagram.com/p/Ce0YUR7BAVW/?utm_source=ig_web_copy_link" class="menu-list" target="_new"><img src="https://cdn.goob-ne.com/goobne/img/banner/ec539873348c4d7a84ef09246595f77f.png" alt="굽스터10"></a></div><div class="img"><a href="https://www.instagram.com/p/Cd7u3tHBM14/?utm_source=ig_web_copy_link" class="menu-list" target="_new"><img src="https://cdn.goob-ne.com/goobne/img/banner/658e5529ddd34c318bf8565a957e6804.png" alt="굽스터9"></a></div><div class="img"><a href="https://www.instagram.com/p/Ckpvpo1JJPo/?utm_source=ig_web_copy_link" class="menu-list" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/77a929629d524bcb9724e7e5368a8d49.png" alt="굽스터13_남해대첩"></a></div><div class="img"><a href="https://www.instagram.com/p/CkxeB7apQ7f/?utm_source=ig_web_copy_link" class="menu-list" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/a64bcffc2b2b4a438b7f544feecc1791.jpg" alt="굽스터14_남해대첩"></a></div><div class="img"><a href="https://www.instagram.com/p/Ck7xKu5J6Gb/?utm_source=ig_web_copy_link" class="menu-list" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/968ead36193a440a981418b97d371149.png" alt="굽스터15_남해대첩"></a></div><div class="img"><a href="https://www.instagram.com/p/Ck0Czz7p3KZ/?utm_source=ig_web_copy_link" class="menu-list" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/35adb8b74b5d4076ba1dfa8d5a4ce5e1.png" alt="굽스터16_너마늘사랑해"></a></div></div></div></div></div><div class="con-box"><p class="title wow fadeInUp">Goobtube</p><div id="infinite" class="goobne-slider wow fadeInUp"><div class="container goobne-wrapper"><ul class="goobne-line"><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li><li class="goobne-text">💥 NO FRY MORE CRISPY</li></ul></div></div><div class="goobne-tv-box wow fadeInUp"><div class="goobne-tv-wrap"><div class="img-box"><a href="https://www.youtube.com/watch?v=z3zFldyCAWg" class="menu-list" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/7763b2adddcf455abaace07df94abae1.jpg" alt="구울레옹-남해대첩"></a></div><div class="img-box"><a href="https://www.youtube.com/watch?v=iDSS4nEbGLc" class="menu-list" target="_new"><img src="https://cdn.goob-ne.com/goobne/img/banner/2c4300e4258b4a75a1b7e461a1360f0d.jpg" alt="차승원"></a></div><div class="img-box"><a href="https://www.youtube.com/watch?v=ID3IjxVvOT0" class="menu-list" target="self"><img src="https://cdn.goob-ne.com/goobne/img/banner/30b3bacf2cbb40c59c95efd8137947f8.jpg" alt="[굽튜브]불금치킨 구울레옹 1분"></a></div></div></div></div></div></div>< !-- end of :: contents --><div id="mobile-nav"><div class="inner"><button type="button" class="qk-menu-btn" onClick="location.href='/account/login?return_url=/delivery/delivery_list'">< !--<img src="https://cdn.goob-ne.com/goobne/resources/assets/images/common/l-quick.svg" alt="퀵메뉴아이콘">2차 오픈 아이콘--><img src="https://cdn.goob-ne.com/goobne/resources/assets/images/common/l-quick_02.svg" alt="온라인주문아이콘"><span>주문</span></button>< !--<a href="https://order.goobne.co.kr:8481/login/login.aspx" class="order">주문</a>--><a href="/menu/menu_main" class="menu ">메뉴보기</a><a href="/store/search_store" class="find ">매장찾기</a><a href="/brd/event/list" class="event ">이벤트</a><a href="/account/login?return_url=/mypage/my_page" class="const ">주문내역</a><style>#mobile-nav.hidden_cla {
+    bottom: -127px;
+    transition: bottom .2s;
+}
+
+#mobile-nav.show {
+    bottom: 0;
+}
+
+#mobile-nav .menu {
+    margin-right: 0;
+}
+
+#mobile-nav .const {
+    background: url(https://cdn.goob-ne.com/goobne/resources/assets/images/common/nav_icon_05_2.svg) top 2rem center no-repeat;
+    background-size: 23px;
+}
+
+#mobile-nav .const.on {
+    background: url(https://cdn.goob-ne.com/goobne/resources/assets/images/common/nav_icon_05_2_on.svg) top 2rem center no-repeat;
+    background-size: 23px;
+}
