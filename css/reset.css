@@ -47,7 +47,7 @@ img {
 body {
     /* 문장간의 공간을 포트사이즈와 동일하게 해서 layout을 쉽게 구현할 수 있게 해준다. */
     line-height: 1;
-    color: #444;
+    /* color: #444; */
 }
 
 .cf::after,

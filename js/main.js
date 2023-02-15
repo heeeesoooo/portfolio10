@@ -2,9 +2,9 @@ $(function () {
     $(window).on('scroll', function () {
 
         if ($(window).scrollTop() > 0) {
-            $('#header').addClass('drop');
+            $('#header').addClass('on');
         } else {
-            $('#header').removeClass('drop');
+            $('#header').removeClass('on');
         }
     })
 
