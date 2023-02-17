@@ -1,0 +1,57 @@
+/*  */
+.subWrap {
+    padding-top: 200px;
+}
+
+.sub_title {
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+
+/* ---------------menu_time-------------- */
+
+#menu_time {
+    padding: 0 0 100px 0;
+}
+
+#menu_time .title_slide {
+    display: flex;
+    gap: 30px;
+}
+
+#menu_time .item {
+    position: relative;
+}
+
+#menu_time .text {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #fff;
+}
+
+/* ---------------menu_recipe-------------- */
+#menu_recipe .title_area {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu_recipe .menu_list_wrap {
+    display: flex;
+}
+
+#menu_recipe .menu_list_wrap .menu_list {
+    flex: 1;
+}
+
+#menu_recipe .menu_list_wrap img {}
+
+/* ---------------menu_popular-------------- */
+
+* {
+    outline: 1px solid tomato;
+}
